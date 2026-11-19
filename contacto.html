@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Melodía</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="index.html">♫ MEL<span>ODÍA</span></a>
+    <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="historia.html">Historia</a>
+      <a href="generos.html">Géneros</a>
+      <a href="instrumentos.html">Instrumentos</a>
+      <a href="artistas.html">Artistas</a>
+      <a href="musica-digital.html">Música digital</a>
+      <a href="integrantes.html">Integrantes</a>
+      <a class="active" href="contacto.html">Contacto ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow">05 / CONTACTO</p>
+      <h1>Hagamos ruido<br>con <span>ideas.</span></h1>
+      <p class="description">¿Tienes una sugerencia, un género favorito o un artista que deberíamos conocer? Envíanos un mensaje.</p>
+    </section>
+
+    <section class="section contact-layout">
+      <div class="contact-info">
+        <p class="eyebrow">CONVERSEMOS</p>
+        <h2>La música se disfruta más cuando se comparte.</h2>
+        <p class="muted">Este formulario es una demostración escolar de validación con JavaScript. No envía datos a un servidor.</p>
+
+        <div class="contact-detail">
+          <span>♫</span>
+          <div><b>Proyecto</b><p>Melodía · Cultura musical</p></div>
+        </div>
+
+        <div class="contact-detail">
+          <span>⌂</span>
+          <div><b>Uso académico</b><p>STEAM I · 2026</p></div>
+        </div>
+      </div>
+
+      <form class="contact-form" id="contactForm" novalidate>
+        <label for="name">Nombre</label>
+        <input id="name" name="name" type="text" placeholder="Tu nombre" required>
+        <small class="field-error" id="nameError"></small>
+
+        <label for="email">Correo electrónico</label>
+        <input id="email" name="email" type="email" placeholder="tucorreo@ejemplo.com" required>
+        <small class="field-error" id="emailError"></small>
+
+        <label for="favorite">Género favorito</label>
+        <select id="favorite" name="favorite" required>
+          <option value="">Selecciona una opción</option>
+          <option>Pop</option>
+          <option>Rock</option>
+          <option>Hip-hop</option>
+          <option>Electrónica</option>
+          <option>Jazz</option>
+          <option>Regional mexicano</option>
+          <option>Otro</option>
+        </select>
+
+        <label for="message">Mensaje</label>
+        <textarea id="message" name="message" rows="4" placeholder="Cuéntanos qué música te gusta..." required></textarea>
+        <small class="field-error" id="messageError"></small>
+
+        <button class="button form-submit" type="submit">Validar y enviar ↗</button>
+        <p id="formFeedback" class="form-feedback" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo" href="index.html">♫ MEL<span>ODÍA</span></a>
+    <p>Un proyecto escolar para explorar la cultura musical.</p>
+    <span>© 2026 MELÓDÍA</span>
+  </footer>
+</body>
+</html>

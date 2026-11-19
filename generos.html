@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Géneros musicales | Melodía</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="index.html">♫ MEL<span>ODÍA</span></a>
+    <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="historia.html">Historia</a>
+      <a class="active" href="generos.html">Géneros</a>
+      <a href="instrumentos.html">Instrumentos</a>
+      <a href="artistas.html">Artistas</a>
+      <a href="musica-digital.html">Música digital</a>
+      <a href="integrantes.html">Integrantes</a>
+      <a href="contacto.html">Contacto ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow">02 / GÉNEROS</p>
+      <h1>¿Cuál es tu<br><span>ritmo?</span></h1>
+      <p class="description">Cada género tiene su propio sonido, historia e identidad. Explora algunos de los estilos más conocidos.</p>
+    </section>
+
+    <section class="section">
+      <div class="filter-row">
+        <div>
+          <p class="eyebrow">LA LISTA MUSICAL</p>
+          <h2>Encuentra tu estilo</h2>
+        </div>
+        <input id="genreSearch" class="search-input" type="search" placeholder="Buscar género..." aria-label="Buscar género">
+      </div>
+
+      <div class="genre-grid" id="genreGrid">
+        <article class="genre-card" data-name="pop">
+          <div class="genre-art art-pop">POP <span>♪</span></div>
+          <div class="genre-info">
+            <h3>Pop</h3>
+            <p>Melodías pegadizas y estructuras accesibles que suelen llegar a públicos amplios.</p>
+            <span class="tag">POPULAR</span>
+          </div>
+        </article>
+
+        <article class="genre-card" data-name="rock">
+          <div class="genre-art art-rock">ROCK <span>⚡</span></div>
+          <div class="genre-info">
+            <h3>Rock</h3>
+            <p>Destaca por el uso de guitarras, bajo, batería y una gran variedad de estilos.</p>
+            <span class="tag">ENERGÍA</span>
+          </div>
+        </article>
+
+        <article class="genre-card" data-name="hip-hop rap">
+          <div class="genre-art art-hiphop">HIP-HOP <span>✦</span></div>
+          <div class="genre-info">
+            <h3>Hip-hop</h3>
+            <p>Combina ritmos, rimas y expresión personal; el rap es uno de sus elementos centrales.</p>
+            <span class="tag">EXPRESIÓN</span>
+          </div>
+        </article>
+
+        <article class="genre-card" data-name="electronica electrónica">
+          <div class="genre-art art-electro">ELECTRÓNICA <span>◉</span></div>
+          <div class="genre-info">
+            <h3>Electrónica</h3>
+            <p>Utiliza sintetizadores y herramientas digitales para crear y transformar sonidos.</p>
+            <span class="tag">DIGITAL</span>
+          </div>
+        </article>
+
+        <article class="genre-card" data-name="jazz">
+          <div class="genre-art art-jazz">JAZZ <span>✧</span></div>
+          <div class="genre-info">
+            <h3>Jazz</h3>
+            <p>Se caracteriza por la improvisación, el ritmo y la interacción entre músicos.</p>
+            <span class="tag">IMPROVISACIÓN</span>
+          </div>
+        </article>
+
+        <article class="genre-card" data-name="regional mexicano">
+          <div class="genre-art art-regional">REGIONAL <span>♫</span></div>
+          <div class="genre-info">
+            <h3>Regional mexicano</h3>
+            <p>Incluye mariachi, banda, norteño y ranchera, con tradiciones musicales diversas.</p>
+            <span class="tag">TRADICIÓN</span>
+          </div>
+        </article>
+      </div>
+
+      <p id="noResults" class="muted hidden">No se encontraron géneros con ese nombre.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo" href="index.html">♫ MEL<span>ODÍA</span></a>
+    <p>Un proyecto escolar para explorar la cultura musical.</p>
+    <span>© 2026 MELÓDÍA</span>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Integrantes | MELÓDÍA</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+
+  <style>
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-top: 35px;
+    }
+
+    .team-card {
+      background: linear-gradient(145deg, #1b1a25, #121219);
+      border: 1px solid #302d3d;
+      border-radius: 18px;
+      padding: 28px;
+      transition: .3s ease;
+    }
+
+    .team-card:hover {
+      transform: translateY(-6px);
+      border-color: #a58bff;
+    }
+
+    /* AVATARES ABSTRACTOS */
+
+    .team-avatar {
+      width: 95px;
+      height: 95px;
+      border-radius: 50%;
+      margin-bottom: 23px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid #ffffff30;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 0 25px #a58bff20;
+    }
+
+    .team-avatar::before {
+      content: "";
+      width: 55px;
+      height: 55px;
+      border-radius: 50%;
+      background: #ffffff35;
+      filter: blur(12px);
+      position: absolute;
+    }
+
+    .team-avatar::after {
+      content: "";
+      width: 35px;
+      height: 35px;
+      border: 2px solid #ffffff75;
+      border-radius: 50%;
+      position: absolute;
+    }
+
+    .avatar-one {
+      background: linear-gradient(135deg, #a58bff, #493477);
+    }
+
+    .avatar-two {
+      background: linear-gradient(135deg, #df91c5, #693d83);
+    }
+
+    .avatar-three {
+      background: linear-gradient(135deg, #74a9d5, #35477c);
+    }
+
+    .avatar-four {
+      background: linear-gradient(135deg, #e7a46d, #864c68);
+    }
+
+    .avatar-five {
+      background: linear-gradient(135deg, #79c6ad, #315e68);
+    }
+
+    .avatar-six {
+      background: linear-gradient(135deg, #c19aff, #62428e);
+    }
+
+    .team-card .tag {
+      color: #a58bff;
+      font-size: .72rem;
+      letter-spacing: 1.5px;
+      font-weight: 700;
+    }
+
+    .team-card h3 {
+      color: white;
+      font-size: 1.12rem;
+      margin: 14px 0 10px;
+    }
+
+    .team-card p {
+      color: #aaa8b8;
+      font-size: .88rem;
+      line-height: 1.8;
+    }
+
+    @media (max-width: 1000px) {
+      .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 650px) {
+      .team-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header">
+
+    <a class="logo" href="index.html">♫ MEL<span>ODÍA</span></a>
+
+    <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="historia.html">Historia</a>
+      <a href="generos.html">Géneros</a>
+      <a href="instrumentos.html">Instrumentos</a>
+      <a href="artistas.html">Artistas</a>
+      <a href="musica-digital.html">Música digital</a>
+      <a class="active" href="integrantes.html">Integrantes</a>
+      <a href="contacto.html">Contacto ↗</a>
+    </nav>
+
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+
+      <p class="eyebrow">06 / NUESTRO EQUIPO</p>
+
+      <h1>
+        Las personas<br>
+        detrás de <span>MELÓDÍA.</span>
+      </h1>
+
+      <p class="description">
+        Un proyecto dedicado a descubrir, compartir y explorar
+        el maravilloso mundo de la música.
+      </p>
+
+    </section>
+
+    <section class="section">
+
+      <p class="eyebrow">CONOCE AL EQUIPO</p>
+
+      <h2>Seis integrantes, una misma pasión.</h2>
+
+      <p class="muted">
+        Estas son las personas que forman parte de nuestro proyecto
+        de cultura musical.
+      </p>
+
+      <div class="team-grid">
+
+        <article class="team-card">
+          <div class="team-avatar avatar-one"></div>
+          <span class="tag">DESARROLLO WEB</span>
+          <h3>Camilo Matheson</h3>
+          <p>
+            Responsable del diseño, programación y organización
+            general de la página web.
+          </p>
+        </article>
+
+        <article class="team-card">
+          <div class="team-avatar avatar-two"></div>
+          <span class="tag">INVESTIGACIÓN</span>
+          <h3>Ivanna Guzmán Vallejo</h3>
+          <p>
+            Área de investigación y recopilación de información
+            sobre la cultura musical.
+          </p>
+        </article>
+
+        <article class="team-card">
+          <div class="team-avatar avatar-three"></div>
+          <span class="tag">MULTIMEDIA</span>
+          <h3>Rafael Manrique Román</h3>
+          <p>
+            Área de contenido visual y selección de recursos
+            multimedia para el sitio.
+          </p>
+        </article>
+
+        <article class="team-card">
+          <div class="team-avatar avatar-four"></div>
+          <span class="tag">CONTENIDO</span>
+          <h3>Leonora Mendoza Bautista</h3>
+          <p>
+            Área de organización y revisión de los textos
+            y temas presentados.
+          </p>
+        </article>
+
+        <article class="team-card">
+          <div class="team-avatar avatar-five"></div>
+          <span class="tag">ESTRUCTURA</span>
+          <h3>Carlos Goldaracena Alvarado</h3>
+          <p>
+            Área de estructura y presentación de la información
+            del proyecto.
+          </p>
+        </article>
+
+        <article class="team-card">
+          <div class="team-avatar avatar-six"></div>
+          <span class="tag">REVISIÓN</span>
+          <h3>Emma Sofía Martínez Tinoco</h3>
+          <p>
+            Área de revisión general y propuestas para mejorar
+            la presentación.
+          </p>
+        </article>
+
+      </div>
+
+    </section>
+
+    <section class="quote">
+      <div>“</div>
+
+      <h2>
+        Detrás de cada gran proyecto hay ideas
+        que se convierten en algo especial.
+      </h2>
+
+      <p>MELÓDÍA · NUESTRO EQUIPO</p>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+
+    <a class="logo" href="index.html">♫ MEL<span>ODÍA</span></a>
+
+    <p>Un proyecto escolar para explorar la cultura musical.</p>
+
+    <span>© 2026 MELÓDÍA</span>
+
+  </footer>
+
+</body>
+</html>

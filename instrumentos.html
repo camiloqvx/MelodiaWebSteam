@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instrumentos | Melodía</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="index.html">♫ MEL<span>ODÍA</span></a>
+    <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="historia.html">Historia</a>
+      <a href="generos.html">Géneros</a>
+      <a class="active" href="instrumentos.html">Instrumentos</a>
+      <a href="artistas.html">Artistas</a>
+      <a href="musica-digital.html">Música digital</a>
+      <a href="integrantes.html">Integrantes</a>
+      <a href="contacto.html">Contacto ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <p class="eyebrow">03 / INSTRUMENTOS</p>
+      <h1>Las herramientas<br>del <span>sonido.</span></h1>
+      <p class="description">Los instrumentos convierten las vibraciones en sonidos que forman melodías y ritmos.</p>
+    </section>
+
+    <section class="section">
+      <p class="eyebrow">FAMILIAS MUSICALES</p>
+      <h2>¿Cómo se produce el sonido?</h2>
+
+      <div class="instrument-grid">
+        <article class="instrument-card">
+          <div class="instrument-symbol">♬</div>
+          <p class="eyebrow">01 / CUERDAS</p>
+          <h3>Instrumentos de cuerda</h3>
+          <p>Producen sonido mediante la vibración de cuerdas que se pulsan, frotan o golpean.</p>
+          <div class="examples"><b>Ejemplos</b><span>Guitarra · Violín · Arpa · Bajo</span></div>
+        </article>
+
+        <article class="instrument-card">
+          <div class="instrument-symbol">♩</div>
+          <p class="eyebrow">02 / VIENTO</p>
+          <h3>Instrumentos de viento</h3>
+          <p>El sonido se genera al hacer vibrar una columna de aire dentro del instrumento.</p>
+          <div class="examples"><b>Ejemplos</b><span>Flauta · Trompeta · Saxofón</span></div>
+        </article>
+
+        <article class="instrument-card">
+          <div class="instrument-symbol">◉</div>
+          <p class="eyebrow">03 / PERCUSIÓN</p>
+          <h3>Instrumentos de percusión</h3>
+          <p>Producen sonido al golpearlos, agitarlos o rasparlos. A menudo marcan el ritmo.</p>
+          <div class="examples"><b>Ejemplos</b><span>Batería · Tambor · Maracas · Xilófono</span></div>
+        </article>
+
+        <article class="instrument-card">
+          <div class="instrument-symbol">▦</div>
+          <p class="eyebrow">04 / ELECTRÓNICOS</p>
+          <h3>Teclados e instrumentos electrónicos</h3>
+          <p>Utilizan teclas, circuitos o sistemas digitales para producir y modificar sonidos.</p>
+          <div class="examples"><b>Ejemplos</b><span>Piano · Sintetizador · Teclado digital</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="dark-panel">
+      <p class="eyebrow">PRUEBA TUS CONOCIMIENTOS</p>
+      <h2>Mini reto musical</h2>
+      <p>¿Qué instrumento pertenece a la familia de percusión?</p>
+
+      <div class="quiz-options">
+        <button class="quiz-option" data-correct="false">Violín</button>
+        <button class="quiz-option" data-correct="true">Tambor</button>
+        <button class="quiz-option" data-correct="false">Flauta</button>
+      </div>
+
+      <p id="quizFeedback" class="quiz-feedback" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo" href="index.html">♫ MEL<span>ODÍA</span></a>
+    <p>Un proyecto escolar para explorar la cultura musical.</p>
+    <span>© 2026 MELÓDÍA</span>
+  </footer>
+</body>
+</html>
